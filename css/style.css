@@ -11,13 +11,49 @@ body {
     font-family: Roboto, sans-serif;
     color: var(--prime-color-text);
 }
+.title {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
  .studia.current{
     color: var(--current-collor)
 }
 .portfolio.current{
     color: var(--current-collor)
 }
+.container{
+    outline: 1px solid tomato;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
  /* -----------HEADER----------- */
+ .header{
+    outline: 1px solid tomato;
+ }
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -35,9 +71,6 @@ body {
 }
 .nav {
  color: inherit;
-}
-.nav-list{
-    list-style: none;
 }
 .nav-link {
     font-weight: 500;
@@ -78,10 +111,16 @@ letter-spacing: 0.02em;
 
 /* ----------------HERO----------------- */
 .hero {
+    padding-top:200px;
+    padding-bottom: 200px;
+    text-align: center;
     background-color: #2F303A;
+    outline: 1px solid tomato;
+
 }
 
 .hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
      font-size: 44px;
     line-height: calc(60/44);
@@ -92,6 +131,9 @@ letter-spacing: 0.02em;
 }
 
 .hero-button {
+    min-width: 216px;
+    padding: 10px 32px;
+
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -105,7 +147,14 @@ letter-spacing: 0.02em;
     color: #FFFFFF;
 }
 
-/* --------------------ABOUT-------------------- */
+/* --------------------FEATURES-------------------- */
+.features{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.about{
+    outline: 1px solid tomato;
+}
 
 .visually-hidden {
     position: absolute;
@@ -119,10 +168,8 @@ letter-spacing: 0.02em;
     clip-path: inset(50%);
     margin: -1px;
 }
-.main-item {
-    list-style: none;
-}
 .main-title {
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16/14);
@@ -136,7 +183,13 @@ letter-spacing: 0.02em;
     color: var(--sub-prime-color-text);
 }
 
-.about-title {
+/*------------------ABOUT---------------- */
+.about{
+    padding-bottom: 94px;
+}
+.about-title.title{
+    margin-bottom: 50px;
+    padding: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -144,23 +197,26 @@ letter-spacing: 0.02em;
     letter-spacing: 0.03em;
 }
 
-.about-list {
-    list-style: none;
-}
-
 /* -----------------НАША КОМАНДА------------------ */
+.team{
+    outline: 1px solid tomato;
+    padding-bottom: 94px;
+}
+.team-img{
+    margin-bottom: 30px;
+}
 .team-title {
+    margin-bottom: 50px;
+    padding: 0;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(24/36);
     text-align: center;
     letter-spacing: 0.03em;
 }
-.team-item {
-    list-style: none;
-}
 
 .team-subtitle {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
@@ -168,6 +224,7 @@ letter-spacing: 0.02em;
     letter-spacing: 0.03em;
 }
 .team-text {
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
@@ -178,16 +235,19 @@ letter-spacing: 0.02em;
 /*---------------------FOOTER-------------------  */
 
 .footer {
+    padding: 60px 0;
     background-color: #2F303A;
 }
 
 .footer-logo {
+    outline: 1px solid tomato;
     font-family: Raleway, sans-serif;
     text-decoration: none;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
     letter-spacing: 0.03em;
+
 }
 
 .footer-web {
@@ -197,12 +257,13 @@ letter-spacing: 0.02em;
 .footer-studio {
     color: #FFFFFF;
 }
-
-.footer-item {
-   list-style: none;
+.footer-list{
+    outline: 1px solid tomato;
+    margin-top: 20px;
 }
 .footer-item{
     font-style: normal;
+    margin-top: 9px;
 }
 .address-map {
     text-decoration: none;
@@ -222,10 +283,13 @@ letter-spacing: 0.02em;
 }
 
 /* ---------------------PORTFOLIO------------------- */
-
-.portfolio-list {
-    list-style: none;  
+.main-portfolio{
+    padding: 94px 0;
 }
+.portfolio-list{
+    margin-bottom: 50px;
+}
+
 .portfolio-button {
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -244,9 +308,6 @@ letter-spacing: 0.02em;
 }
 
 /* --------------ПРИКЛАДИ ПРОЕКТІВ---------------- */
-.project-item {
-    list-style: none;
-}
 .project-link {
     text-decoration: none;
     color: inherit;
