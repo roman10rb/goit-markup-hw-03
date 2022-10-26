@@ -289,6 +289,12 @@ letter-spacing: 0.02em;
 .portfolio-list{
     margin-bottom: 50px;
 }
+.portfolio-img{
+    margin-bottom: 20px;
+}
+.project-title{
+    margin-bottom: 4px;
+}
 
 .portfolio-button {
     font-family: Roboto, sans-serif;
