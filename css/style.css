@@ -1,0 +1,265 @@
+:root{
+    --prime-color-text: #212121;
+    --web-part-inLogo-color: #2196F3;
+    --studio-part-inLogo-color: #000000;
+    --current-collor: #2196F3;
+    --hover-color:#2196F3;
+    --sub-prime-color-text: #757575;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--prime-color-text);
+}
+ .studia.current{
+    color: var(--current-collor)
+}
+.portfolio.current{
+    color: var(--current-collor)
+}
+ /* -----------HEADER----------- */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.logo-web {
+    color: var(--web-part-inLogo-color);
+}
+.logo-studio{
+    color: var(--studio-part-inLogo-color);
+}
+.nav {
+ color: inherit;
+}
+.nav-list{
+    list-style: none;
+}
+.nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: inherit;
+}
+.nav-link:hover,
+.nav-link:focus{
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+
+.kontakt-list {
+list-style: none;
+}
+
+.kontakt-tel,
+.kontakt-mail{
+text-decoration: none;
+font-weight: 500;
+font-size: 14px;
+line-height: calc(16/14);
+letter-spacing: 0.02em;
+ color: var(--sub-prime-color-text);
+}
+
+.kontakt-tel:hover,
+.kontakt-tel:focus,
+.kontakt-mail:hover,
+.kontakt-mail:focus{
+    cursor: pointer;
+    color: var(--hover-color);
+}
+
+/* ----------------HERO----------------- */
+.hero {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+     font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero-button {
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}
+
+/* --------------------ABOUT-------------------- */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.main-item {
+    list-style: none;
+}
+.main-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.main-text {
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--sub-prime-color-text);
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.about-list {
+    list-style: none;
+}
+
+/* -----------------НАША КОМАНДА------------------ */
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(24/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-item {
+    list-style: none;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-text {
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--sub-prime-color-text);
+}
+
+/*---------------------FOOTER-------------------  */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer-logo {
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+}
+
+.footer-web {
+    color: var(--web-part-inLogo-color);
+}
+
+.footer-studio {
+    color: #FFFFFF;
+}
+
+.footer-item {
+   list-style: none;
+}
+.footer-item{
+    font-style: normal;
+}
+.address-map {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+
+.address-mail,
+.address-tel { 
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------PORTFOLIO------------------- */
+
+.portfolio-list {
+    list-style: none;  
+}
+.portfolio-button {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.portfolio-button:hover,
+.portfolio-button:focus{
+    background: #2196F3;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* --------------ПРИКЛАДИ ПРОЕКТІВ---------------- */
+.project-item {
+    list-style: none;
+}
+.project-link {
+    text-decoration: none;
+    color: inherit;
+}
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+}
+.project-text {
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    color: var(--sub-prime-color-text);
+}
