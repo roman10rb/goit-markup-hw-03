@@ -3,15 +3,16 @@
     <html lang="uk">
 
     <head>
-        <link rel="stylesheet" href="./css/style.css">
+       
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Студія</title>
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+         <link rel="stylesheet" href="./css/style.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
+         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
 
@@ -19,7 +20,7 @@
     
     <body>
         <header class="header">
-            <div class="container">
+            <div class="container header-nav">
                  <a href="./index.html" lang="en" class="logo"> <span class="logo-web"> Web</span><span class="logo-studio">Studio</span></a>
             <nav class="nav">
                 <ul class="nav-list list">
@@ -36,19 +37,17 @@
         </header>
     
         <main>
-            
             <section class="hero">
                 <div class="container">
-                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                 <h1 class="hero-title">Ефективні рішення для <br> вашого бізнесу</h1>
+                <button type="button" class="hero-button button">Замовити послугу</button>
             </div>
             </section>
                 <!-- ОСОБЛИВОСТІ -->
             <section class="features">
                 <div class="container">
-                        <!-- h2 який потім візульно скриємо -->
-                <h2 class="visually-hidden">Особливості</h2>
-                <ul class="main-list list">
+                 <h2 class="visually-hidden">Особливості</h2>
+                 <ul class="main-list features-nav list">
                     <li class="main-item">
                         <h3 class="main-title">УВАГА ДО ДЕТАЛЕЙ</h3>
                         <p class="main-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -83,26 +82,34 @@
             <section class="team">
                 <div class="container">
                       <h2 class="team-title title">Наша команда</h2>
-                <ul class="team-list list">
+                <ul class="team-list team-nav list">
                     <li class="team-item">
                         <img class="team-img" src="./images/hw1/img(4).jpg" width="270" height="260" alt="Ігор">
+                        <div class="image-text">
                         <h3 class="team-subtitle">Ігор Дем'яненко</h3>
                         <p class="team-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-img"  src="./images/hw1/img(5).jpg" width="270" height="260" alt="Ольга">
+                        <div class="image-text">
                         <h3 class="team-subtitle">Ольга Рєпіна</h3>
                         <p class="team-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-img"  src="./images/hw1/img(6).jpg" width="270" height="260" alt="Микола">
+                        <div class="image-text">
                         <h3 class="team-subtitle">Микола Тарасов</h3>
                         <p class="team-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-item">
                         <img class="team-img"  src="./images/hw1/img(7).jpg" width="270" height="260" alt="Михайло">
-                        <h3 class="team-subtitle">Михайло Єрмаков</h3>
+                        <div class="image-text">
+                         <h3 class="team-subtitle">Михайло Єрмаков</h3>
                         <p class="team-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
                 </div> 

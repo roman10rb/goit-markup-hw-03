@@ -15,7 +15,11 @@ body {
     margin: 0;
     padding: 0;
 }
-
+.list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 h1,
 h1,
 h3,
@@ -27,16 +31,17 @@ p {
     padding: 0;
 }
 
-img{
-    display: block;
-}
-
-
-.list{
+ul{
     margin: 0;
     padding: 0;
-    list-style: none;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
  .studia.current{
     color: var(--current-collor)
 }
@@ -44,16 +49,23 @@ img{
     color: var(--current-collor)
 }
 .container{
-    outline: 1px solid tomato;
     width: 1200px;
+    padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.button{
+    border: 0;
+}
+
  /* -----------HEADER----------- */
- .header{
-    outline: 1px solid tomato;
- }
+.header-nav{
+    border-bottom: 1px solid #ECECEC;
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
@@ -72,6 +84,16 @@ img{
 .nav {
  color: inherit;
 }
+
+.nav-list{
+    display: flex;
+    margin-left: 93px;
+    gap: 50px;
+}
+.nav-list .nav-link{
+    display: block;
+    padding: 32px 0;
+}
 .nav-link {
     font-weight: 500;
     font-size: 14px;
@@ -88,7 +110,10 @@ img{
 
 
 .kontakt-list {
+    margin-left: auto;
 list-style: none;
+display: flex;
+gap: 50px;
 }
 
 .kontakt-tel,
@@ -115,8 +140,6 @@ letter-spacing: 0.02em;
     padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
-    outline: 1px solid tomato;
-
 }
 
 .hero-title {
@@ -152,8 +175,9 @@ letter-spacing: 0.02em;
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.about{
-    outline: 1px solid tomato;
+.features-nav{
+    display: flex;
+    gap: 30px;
 }
 
 .visually-hidden {
@@ -187,6 +211,10 @@ letter-spacing: 0.02em;
 .about{
     padding-bottom: 94px;
 }
+.about-list{
+    display: flex;
+    justify-content: space-between;
+}
 .about-title.title{
     margin-bottom: 50px;
     padding: 0;
@@ -199,12 +227,23 @@ letter-spacing: 0.02em;
 
 /* -----------------НАША КОМАНДА------------------ */
 .team{
-    outline: 1px solid tomato;
     padding-bottom: 94px;
 }
-.team-img{
-    margin-bottom: 30px;
+.team-nav{
+    display: flex;
 }
+
+.team-item{
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-left: 30px;
+}
+.team-item:nth-child(1){
+    margin-left: 0;
+}
+.image-text{
+padding: 30px 10px;
+}
+
 .team-title {
     margin-bottom: 50px;
     padding: 0;
@@ -224,7 +263,6 @@ letter-spacing: 0.02em;
     letter-spacing: 0.03em;
 }
 .team-text {
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
@@ -240,7 +278,6 @@ letter-spacing: 0.02em;
 }
 
 .footer-logo {
-    outline: 1px solid tomato;
     font-family: Raleway, sans-serif;
     text-decoration: none;
     font-weight: 700;
@@ -258,7 +295,6 @@ letter-spacing: 0.02em;
     color: #FFFFFF;
 }
 .footer-list{
-    outline: 1px solid tomato;
     margin-top: 20px;
 }
 .footer-item{
@@ -287,16 +323,34 @@ letter-spacing: 0.02em;
     padding: 94px 0;
 }
 .portfolio-list{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
     margin-bottom: 50px;
 }
-.portfolio-img{
-    margin-bottom: 20px;
+/* ------------------CARDS------------------ */
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+   
 }
-.project-title{
-    margin-bottom: 4px;
+.project-item{
+    width: 370px;
 }
 
+.project-alltext{
+   border: 1px solid #EEEEEE
+}
+
+.project-alltext{
+    padding: 20px 24px;
+    border-top: none;
+
+}
 .portfolio-button {
+    border-radius: 4px;
+    padding: 6px 22px;
     font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
