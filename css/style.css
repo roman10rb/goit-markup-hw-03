@@ -60,8 +60,10 @@ img {
 }
 
  /* -----------HEADER----------- */
-.header-nav{
+ header{
     border-bottom: 1px solid #ECECEC;
+ }
+.header-nav{
     display: flex;
     align-items: center;
 }
@@ -133,6 +135,9 @@ letter-spacing: 0.02em;
     cursor: pointer;
     color: var(--hover-color);
 }
+.section{
+    padding: 94px 0;
+}
 
 /* ----------------HERO----------------- */
 .hero {
@@ -192,6 +197,10 @@ letter-spacing: 0.02em;
     clip-path: inset(50%);
     margin: -1px;
 }
+.main-item{
+    outline: 1px solid red;
+    flex-basis: 270px;
+}
 .main-title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -209,7 +218,7 @@ letter-spacing: 0.02em;
 
 /*------------------ABOUT---------------- */
 .about{
-    padding-bottom: 94px;
+    padding-top: 0;
 }
 .about-list{
     display: flex;
@@ -227,7 +236,8 @@ letter-spacing: 0.02em;
 
 /* -----------------НАША КОМАНДА------------------ */
 .team{
-    padding-bottom: 94px;
+    padding-top: 0;
+    background-color: #F5F4FA;
 }
 .team-nav{
     display: flex;
@@ -241,7 +251,8 @@ letter-spacing: 0.02em;
     margin-left: 0;
 }
 .image-text{
-padding: 30px 10px;
+    text-align: center;
+padding: 30px;
 }
 
 .team-title {
@@ -249,7 +260,7 @@ padding: 30px 10px;
     padding: 0;
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(24/36);
+    line-height: calc(36/24);
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -294,8 +305,11 @@ padding: 30px 10px;
 .footer-studio {
     color: #FFFFFF;
 }
-.footer-list{
+.footer-address{
     margin-top: 20px;
+}
+.footer-list:first-child{
+    margin-top: 0;
 }
 .footer-item{
     font-style: normal;
@@ -319,9 +333,6 @@ padding: 30px 10px;
 }
 
 /* ---------------------PORTFOLIO------------------- */
-.main-portfolio{
-    padding: 94px 0;
-}
 .portfolio-list{
     display: flex;
     gap: 8px;
@@ -373,6 +384,7 @@ padding: 30px 10px;
     color: inherit;
 }
 .project-title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
