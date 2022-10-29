@@ -198,7 +198,6 @@ letter-spacing: 0.02em;
     margin: -1px;
 }
 .main-item{
-    outline: 1px solid red;
     flex-basis: 270px;
 }
 .main-title {
